@@ -4,6 +4,8 @@
 
 ```
 // Output from current source. Answers omitted to avoid spoiler alerts.
+Problem10: XX in 3987 ms
+Problem9: XXX in 142 ms
 Problem8: XXX in 8 ms
 Problem7: XXX in 632 ms
 Problem6: XXX in 0 ms
