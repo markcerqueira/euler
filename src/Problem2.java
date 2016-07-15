@@ -1,7 +1,5 @@
-package gg.mark.problems;
-
-import gg.mark.support.Fibonacci;
-import gg.mark.support.Problem;
+import support.Fibonacci;
+import support.Problem;
 
 /**
  * Created by Mark on 7/14/16.

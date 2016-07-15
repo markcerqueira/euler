@@ -1,4 +1,4 @@
-package gg.mark.support;
+package support;
 
 import javafx.util.Pair;
 

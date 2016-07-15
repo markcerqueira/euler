@@ -1,11 +1,5 @@
-package gg.mark.problems;
-
-import gg.mark.support.Fibonacci;
-import gg.mark.support.Prime;
-import gg.mark.support.Problem;
-
-import java.util.ArrayList;
-import java.util.List;
+import support.Prime;
+import support.Problem;
 
 /**
  * Created by Mark on 7/14/16.

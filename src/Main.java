@@ -1,7 +1,4 @@
-package gg.mark;
-
-import gg.mark.problems.*;
-import gg.mark.support.Problem;
+import support.Problem;
 import javafx.util.Pair;
 
 public class Main {
