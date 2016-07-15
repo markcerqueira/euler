@@ -4,6 +4,7 @@ Project Euler
 https://projecteuler.net/
 
 ```
+Problem8: XXX in 8 ms
 Problem7: XXX in 632 ms
 Problem6: XXX in 0 ms
 Problem5: XXX in 1338 ms
