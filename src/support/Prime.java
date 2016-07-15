@@ -8,6 +8,6 @@ import java.math.BigInteger;
 public class Prime {
 
     public static boolean isPrime(long num) {
-        return BigInteger.valueOf(num).isProbablePrime(10); // 99% certainty
+        return BigInteger.valueOf(num).isProbablePrime(30); // .999999999 certainty
     }
 }

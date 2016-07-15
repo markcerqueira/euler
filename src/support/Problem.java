@@ -7,13 +7,13 @@ import javafx.util.Pair;
  */
 public abstract class Problem {
 
-    // Result is pair where first number is answer and second answer is running time in seconds
+    // Result is pair where first number is answer and second answer is running time in milliseconds
     public Pair<Long, Long> solve() {
         long currentTime = System.currentTimeMillis();
         long answer = solveProblem();
         long endTime = System.currentTimeMillis();
 
-        return new Pair<>(answer, ((endTime - currentTime) / 1000));
+        return new Pair<>(answer, (endTime - currentTime));
     }
 
     public abstract long solveProblem();
