@@ -1,9 +1,9 @@
-# euler
-Project Euler
+## euler - my [Project Euler][1] solutions
 
-https://projecteuler.net/
+![Project Euler Badge](https://projecteuler.net/profile/markcerqueira.png "Project Euler Badge")
 
 ```
+// Output from current source. Answers omitted to avoid spoiler alerts.
 Problem8: XXX in 8 ms
 Problem7: XXX in 632 ms
 Problem6: XXX in 0 ms
@@ -13,3 +13,5 @@ Problem3: XXX in 1008 ms
 Problem2: XXX in 1 ms
 Problem1: XXX in 0 ms
 ```
+
+[1]: https://projecteuler.net/
