@@ -1,8 +1,7 @@
-import support.Palindrome;
+import support.Prime;
 import support.Problem;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Mark on 7/14/16.
@@ -13,35 +12,48 @@ public class Problem5 extends Problem {
 
     @Override
     public long solveProblem() {
-        // If divisible by 20, it's divisible by 10 and so on
-        // 20 -> 10
-        // 19
-        // 18 -> 9 -> 3
-        // 17
-        // 16 -> 8 -> 4 -> 2
-        // 15 -> 5
-        // 14 -> 7
-        // 13
-        // 12 -> 6
-        // 11
-        // 10 -> 5
+        // To be divisible, we have to find all the prime factors of 1 through 20
+        // and then remove duplicates across all those prime duplicates. That will
+        // get us the smallest number that is divisible.
 
-        // Construct the divisors we check against using the first numbers from the information above.
-        int[] divisors = new int[] { 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10 };
+        HashMap<Integer, Integer> primeFactorsToOccurrenceMap = new HashMap<>();
 
-        // We could also start at 2520 since we are given that information in the problem but it doesn't
-        // save us much.
-        for (int i = 1; ; i++) {
-            boolean noDivisorsFailed = true;
-            for (int j = 0; j < divisors.length; j++) {
-                if (i % divisors[j] != 0) {
-                    noDivisorsFailed = false;
-                    break;
+        // Initialize here to simplify checking later
+        for (int i = 0; i < 20; i++) {
+            primeFactorsToOccurrenceMap.put(i, 0);
+        }
+
+        for (int i = 20; i > 0; i--) {
+            // Get prime factors
+            List<Integer> factors = Prime.primeFactors(i);
+
+            // Put the prime factors in a map where the value is the time that prime factor shows up
+            HashMap<Integer, Integer> numOccurrences = new HashMap<>();
+            for (Integer primeFactor : factors) {
+                if (numOccurrences.containsKey(primeFactor)) {
+                    numOccurrences.put(primeFactor, numOccurrences.get(primeFactor) + 1);
+                } else {
+                    numOccurrences.put(primeFactor, 1);
                 }
             }
-            if (noDivisorsFailed) {
-                return i;
+
+            for (Map.Entry<Integer, Integer> entry : numOccurrences.entrySet()) {
+                int primeFactor = entry.getKey();
+
+                // We don't simply add the prime factor. We only need the max of the current count of that prime
+                // factor and the current count that prime factor shows up.
+                int numberOccurrences = Math.max(entry.getValue(), primeFactorsToOccurrenceMap.get(primeFactor));
+
+                primeFactorsToOccurrenceMap.put(primeFactor, numberOccurrences);
             }
         }
+
+        // Now we can calculate the answer by multiplying our prime factors together!
+        long solution = 1;
+        for (Map.Entry<Integer, Integer> entry : primeFactorsToOccurrenceMap.entrySet()) {
+            solution *= Math.pow(entry.getKey(), entry.getValue());
+        }
+
+        return solution;
     }
 }

@@ -35,6 +35,11 @@ public class Problem8 extends Problem {
         for (int i = 0; i < thousandDigits.length() - 13; i++) {
             String digits = thousandDigits.substring(i, i + 13);
 
+            // Slight optimization - if 0 is present answer will be 0.
+            if (digits.indexOf('0') != -1) {
+                continue;
+            }
+
             long product = 1;
             for (int j = 0; j < digits.length(); j++) {
                 product *= digits.charAt(j) - '0';
