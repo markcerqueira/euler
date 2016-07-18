@@ -7,6 +7,8 @@ MacBook Pro (2.7 GHz i7, 16 GB RAM, 10.11.5):
 
 ```
 // Answers omitted to avoid spoiler alerts.
+Problem14: XX in 2626 ms
+Problem13: XX in 7 ms
 Problem12: XX in 733 ms
 Problem11: XX in 9 ms
 Problem10: XX in 1199 ms

@@ -8,7 +8,6 @@ import java.util.List;
  *
  * https://projecteuler.net/problem=12
  */
-@SuppressWarnings("Duplicates")
 public class Problem12 extends Problem {
 
     @Override
