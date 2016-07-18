@@ -3,10 +3,12 @@
 ![Project Euler Badge](https://projecteuler.net/profile/markcerqueira.png "Project Euler Badge")
 
 Running the Main class solves all problems in the `problemClasses` array. Output from this running on a mid-2012
-Macbook Pro (2.7 GHz i7, 16 GB RAM, 10.11.5):
+MacBook Pro (2.7 GHz i7, 16 GB RAM, 10.11.5):
 
 ```
 // Answers omitted to avoid spoiler alerts.
+Problem12: XX in 733 ms
+Problem11: XX in 9 ms
 Problem10: XX in 1199 ms
 Problem9: XXX in 3 ms
 Problem8: XXX in 1 ms
