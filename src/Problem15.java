@@ -10,8 +10,8 @@ import java.util.*;
  */
 public class Problem15 extends Problem {
 
-    private static final BigInteger GRID_DIMENSION = BigInteger.valueOf(20); // n
-    private static final BigInteger DECISIONS = BigInteger.valueOf(40); // k
+    private static final long GRID_DIMENSION = 20;
+    private static final long DECISIONS = 40;
 
     /* private class Point {
         int x;
@@ -39,7 +39,7 @@ public class Problem15 extends Problem {
         if (chooseResultMap.containsKey(firstKey)) {
             firstTerm = chooseResultMap.get(firstKey);
         } else {
-            firstTerm = choose(total-1,choose-1);
+            firstTerm = choose(total - 1, choose - 1);
             chooseResultMap.put(firstKey, firstTerm);
         }
 
@@ -57,7 +57,7 @@ public class Problem15 extends Problem {
 
     @Override
     public long solveProblem() {
-        return choose(40, 20);
+        return choose(DECISIONS, GRID_DIMENSION);
 
         // This solution that iterates over all paths using a Stack is okay for grids that are around 10 wide/high,
         // but becomes too computational expensive as grid grows.
@@ -66,16 +66,13 @@ public class Problem15 extends Problem {
         long routes = 0;
         while(!pointStack.empty()) {
             Point p = pointStack.pop();
-
             if (p.x == GRID_DIMENSION && p.y == GRID_DIMENSION) {
                 routes++;
                 continue;
             }
-
             if (p.y + 1 <= GRID_DIMENSION) {
                 pointStack.push(new Point(p.x, p.y + 1));
             }
-
             if (p.x + 1 <= GRID_DIMENSION) {
                 pointStack.push(new Point(p.x + 1, p.y));
             }

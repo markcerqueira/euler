@@ -1,5 +1,4 @@
 import support.Problem;
-import javafx.util.Pair;
 
 public class Main {
 
