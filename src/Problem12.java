@@ -21,4 +21,9 @@ public class Problem12 extends Problem {
             }
         }
     }
+
+    @Override
+    public String base64EncodedAnswer() {
+        return "NzY1NzY1MDA=";
+    }
 }

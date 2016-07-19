@@ -17,8 +17,7 @@ public class Main {
                 System.out.println(e);
             }
 
-            Pair<Long, Long> answer = problem.solve();
-            System.out.println(problem.getClass().getSimpleName() + ": " + answer.getKey() + " in " + answer.getValue() + " ms");
+            problem.runAndLogOutput();
         }
     }
 }

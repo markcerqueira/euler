@@ -29,4 +29,9 @@ public class Problem6 extends Problem {
         }
         return solution;
     }
+
+    @Override
+    public String base64EncodedAnswer() {
+        return "MjUxNjQxNTA=";
+    }
 }

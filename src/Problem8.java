@@ -52,4 +52,9 @@ public class Problem8 extends Problem {
 
         return largestProduct;
     }
+
+    @Override
+    public String base64EncodedAnswer() {
+        return "MjM1MTQ2MjQwMDA=";
+    }
 }

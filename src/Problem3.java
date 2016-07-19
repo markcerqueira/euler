@@ -25,4 +25,9 @@ public class Problem3 extends Problem {
 
         return -1;
     }
+
+    @Override
+    public String base64EncodedAnswer() {
+        return "Njg1Nw==";
+    }
 }

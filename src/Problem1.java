@@ -17,4 +17,9 @@ public class Problem1 extends Problem {
         }
         return sum;
     }
+
+    @Override
+    public String base64EncodedAnswer() {
+        return "MjMzMTY4";
+    }
 }

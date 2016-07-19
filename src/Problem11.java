@@ -111,4 +111,9 @@ public class Problem11 extends Problem {
 
         return highestProduct;
     }
+
+    @Override
+    public String base64EncodedAnswer() {
+        return "NzA2MDA2NzQ=";
+    }
 }

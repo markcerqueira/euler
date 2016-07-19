@@ -42,4 +42,9 @@ public class Problem4 extends Problem {
         }
         return -1;
     }
+
+    @Override
+    public String base64EncodedAnswer() {
+        return "OTA2NjA5";
+    }
 }

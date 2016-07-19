@@ -58,4 +58,9 @@ public class Problem14 extends Problem {
 
         return length;
     }
+
+    @Override
+    public String base64EncodedAnswer() {
+        return "ODM3Nzk5";
+    }
 }

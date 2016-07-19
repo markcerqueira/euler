@@ -22,4 +22,9 @@ public class Problem7 extends Problem {
             }
         }
     }
+
+    @Override
+    public String base64EncodedAnswer() {
+        return "MTA0NzQz";
+    }
 }

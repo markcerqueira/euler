@@ -143,4 +143,9 @@ public class Problem13 extends Problem {
         // Return only the first 10 digits of the sum
         return Long.parseLong(answerStringBuilder.toString().substring(0, 10));
     }
+
+    @Override
+    public String base64EncodedAnswer() {
+        return "NTUzNzM3NjIzMA==";
+    }
 }
