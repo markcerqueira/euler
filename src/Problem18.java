@@ -1,3 +1,4 @@
+import support.FileParser;
 import support.Problem;
 
 import java.io.BufferedReader;
@@ -23,23 +24,19 @@ public class Problem18 extends Problem {
     }
 
     public static long solveMaximumPathSum(String dataFilename) throws Exception {
-        InputStream inputStream = Problem18.class.getResourceAsStream(dataFilename);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
+        List<String> fileContent = FileParser.parseFile(dataFilename);
 
-        // This block reads in data from the text file specified in the parameter. It pushes data into a list of
-        // integer rows with the longer rows on top (i.e. inverted pyramid).
         List<Integer[]> pyramidRows = new ArrayList<>();
-        String text;
-        while ((text = reader.readLine()) != null) {
-            String[] numbersAsStrings = text.split(" ");
+
+        // This block parses fileContent read from a String of space-separated numbers to a Integer[]. It pushes data
+        // into the pyramidRows list with the longer rows on top (i.e. inverted pyramid).
+        for (String line : fileContent) {
+            String[] numbersAsStrings = line.split(" ");
             Integer[] numbersInt = new Integer[numbersAsStrings.length];
             for (int i = 0; i < numbersAsStrings.length; i++) {
                 numbersInt[i] = Integer.parseInt(numbersAsStrings[i]);
             }
             pyramidRows.add(0, numbersInt);
-        }
-        if (reader != null) {
-            reader.close();
         }
 
         // Dynamic programming! It's much, much faster than brute forcing and trying every possible path through the

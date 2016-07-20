@@ -6,6 +6,8 @@ Output from running `Main.java` on a mid-2012 MacBook Pro (2.7 GHz i7, 16 GB RAM
 
 ```
 // Answers omitted to avoid spoiler alerts.
+Problem22: XX in 27 ms
+Problem21: XX in 54 ms
 Problem20: XX in 11 ms
 Problem19: XX in 6 ms
 Problem67: XX in 18 ms
