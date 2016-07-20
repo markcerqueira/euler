@@ -6,6 +6,8 @@ Output from running `Main.java` on a mid-2012 MacBook Pro (2.7 GHz i7, 16 GB RAM
 
 ```
 // Answers omitted to avoid spoiler alerts.
+Problem20: XX in 11 ms
+Problem19: XX in 6 ms
 Problem67: XX in 18 ms
 Problem18: XX in 1 ms
 Problem17: XX in 5 ms
@@ -27,12 +29,18 @@ Problem2: XXX in 1 ms
 Problem1: XXX in 0 ms
 ```
 
-To solve a new problem:
+### Adding a new solution
 * Create a new class that inherits from Problem and implement abstract methods.
 * Add the new class name (e.g. `Problem1.class`) to `problemClasses` in `Main.java`.
-* The `public long solveProblem()` should return the answer to the problem.
+* The `public long solveProblem()` should return the answer to the problem. Solutions should follow Project Euler's ["one-minute rule"][3]: most solutions should run under one minute. 
 * Running `Main.java` class solves all problems in the `problemClasses` array.
-* Once the answer is correct [Base64 encode it][2] and return that value as a String in `public String base64EncodedAnswer()`.
+* Once the answer is correct [Base64 encode it][2] and return that value as a String in `public String base64EncodedAnswer()`. When the problem is solved on subsequent runs it'll verify that the answer it calculates is still correct.
+
+### Improvements
+* Some (cheeky) solutions use `BigInteger` to work with super big numbers. For increased challenge, reduce usage of BigInteger as much as possible.
+* Lots of solutions are brute force (but run very quickly). Explore if there are more elegant solutions. 
+* Add problem metadata (e.g. title) to Problem subclasses.
 
 [1]: https://projecteuler.net/
 [2]: https://www.base64encode.org/
+[3]: https://projecteuler.net/about
