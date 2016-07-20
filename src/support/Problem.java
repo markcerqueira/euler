@@ -10,8 +10,13 @@ public abstract class Problem {
 
     // Result is pair where first number is answer and second answer is running time in milliseconds
     public Pair<Long, Long> solve() {
-        long currentTime = System.currentTimeMillis();
-        return new Pair<>(solveProblem(), (System.currentTimeMillis() - currentTime));
+        try {
+            long currentTime = System.currentTimeMillis();
+            return new Pair<>(solveProblem(), (System.currentTimeMillis() - currentTime));
+        } catch (Exception e) {
+            System.out.println(e);
+            return new Pair<>(-1L, -1L);
+        }
     }
 
     public void runAndLogOutput() {
@@ -36,7 +41,7 @@ public abstract class Problem {
         }
     }
 
-    public abstract long solveProblem();
+    public abstract long solveProblem() throws Exception;
 
     public abstract String base64EncodedAnswer();
 }
