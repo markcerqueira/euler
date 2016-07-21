@@ -1,7 +1,6 @@
 package support;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Mark on 7/17/16.
@@ -25,4 +24,20 @@ public class Factors {
         return factorsList;
     }
 
+    // proper divisors of num = numbers LESS THAN num which divide evenly into num
+    public static List<Integer> getProperDivisors(long num) {
+        if (num == 0 || num == 1) {
+            return new ArrayList<>();
+        }
+
+        List<Integer> factors = getFactors(num);
+
+        // Based on getFactors implementation, num will appear in index 1 (paired with the factor 1 in index 0)
+        factors.remove(1);
+
+        // Convert to a set to remove duplicates
+        Set<Integer> divisors = new HashSet<>(factors);
+
+        return new ArrayList<>(divisors);
+    }
 }

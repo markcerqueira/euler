@@ -1,8 +1,6 @@
 import support.Factors;
 import support.Problem;
 
-import java.math.BigInteger;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,17 +17,14 @@ public class Problem21 extends Problem {
         Map<Integer, Integer> divisorsSumMap = new HashMap<>();
 
         for (int i = 1; i <= 10_000; i++) {
-            // Get factors (divisors if we exclude the number itself) and sum them up
-            List<Integer> factors = Factors.getFactors(i);
-            int factorsSum = 0;
-            for (Integer factor : factors) {
-                // Do not include the number itself.
-                if (factor != i) {
-                    factorsSum += factor;
-                }
+            // Get proper divisors and sum them up
+            List<Integer> properDivisors = Factors.getProperDivisors(i);
+            int properDivisorsSum = 0;
+            for (Integer properDivisor : properDivisors) {
+                properDivisorsSum += properDivisor;
             }
 
-            divisorsSumMap.put(i, factorsSum);
+            divisorsSumMap.put(i, properDivisorsSum);
         }
 
         int sumAmicableNumbers = 0;
