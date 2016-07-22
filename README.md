@@ -2,16 +2,21 @@
 
 ![Project Euler Badge](https://projecteuler.net/profile/markcerqueira.png "Project Euler Badge")
 
-Output from running `Main.java` on a mid-2012 MacBook Pro (2.7 GHz i7, 16 GB RAM, 10.11.5):
+Running times on a mid-2012 MacBook Pro (2.7 GHz i7, 16 GB RAM, 10.11.5):
 
 ```
 // Answers omitted to avoid spoiler alerts.
+Problem97: XX in 5565 ms
+Problem67: XX in 18 ms
+Problem46: XX in 1712 ms
+Problem42: XX in 17 ms
+Problem40: XX in 85 ms
+Problem35: XX in 1224 ms
+Problem34: XX in 465 ms
 Problem33: XX in 35 ms
 Problem32: XX in 86 ms
-// Problem 31
 Problem30: XX in 304 ms
 Problem29: XX in 110 ms
-// Problem 28
 Problem27: XX in 209 ms
 Problem26: XX in 5 ms
 Problem25: XX in 203 ms
@@ -21,7 +26,6 @@ Problem22: XX in 27 ms
 Problem21: XX in 54 ms
 Problem20: XX in 11 ms
 Problem19: XX in 6 ms
-Problem67: XX in 18 ms
 Problem18: XX in 1 ms
 Problem17: XX in 5 ms
 Problem16: XX in 3 ms

@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Class[] problemClasses = new Class[] {
-                Problem33.class, Problem32.class, Problem31.class, Problem30.class,
+                Problem35.class, Problem34.class, Problem33.class, Problem32.class, Problem31.class, Problem30.class,
                 Problem29.class, Problem28.class, Problem27.class, Problem26.class, Problem25.class, Problem24.class,
                 Problem23.class, Problem22.class, Problem21.class, Problem20.class, Problem19.class, Problem67.class,
                 Problem18.class, Problem17.class, Problem16.class, Problem15.class, Problem14.class, Problem13.class,
