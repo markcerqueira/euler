@@ -6,7 +6,6 @@ import support.Problem;
  *
  * https://projecteuler.net/problem=11
  */
-@SuppressWarnings("Duplicates")
 public class Problem11 extends Problem {
 
     @Override

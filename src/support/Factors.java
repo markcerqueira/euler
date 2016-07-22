@@ -40,4 +40,12 @@ public class Factors {
 
         return new ArrayList<>(divisors);
     }
+
+    // http://stackoverflow.com/a/4009247/265791
+    public static long greatestCommonDenominator(long a, long b) {
+        if (b == 0) {
+            return a;
+        }
+        return greatestCommonDenominator(b, a % b);
+    }
 }
