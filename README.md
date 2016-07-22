@@ -11,6 +11,8 @@ Problem67: XX in 18 ms
 Problem46: XX in 1712 ms
 Problem42: XX in 17 ms
 Problem40: XX in 85 ms
+Problem37: XX in 1091 ms
+Problem36: XX in 172 ms
 Problem35: XX in 1224 ms
 Problem34: XX in 465 ms
 Problem33: XX in 35 ms

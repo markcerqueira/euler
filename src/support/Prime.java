@@ -23,6 +23,10 @@ public class Prime {
         return true;
     }
 
+    public static boolean isPrime(String num) {
+        return isPrime(Long.parseLong(num));
+    }
+
     // http://www.vogella.com/tutorials/JavaAlgorithmsPrimeFactorization/article.html
     public static List<Integer> primeFactors(int number) {
         int n = number;
