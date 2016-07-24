@@ -1,6 +1,6 @@
 ## euler - my [Project Euler][1] solutions
 
-![Project Euler Badge](https://projecteuler.net/profile/markcerqueira.png "Project Euler Badge")
+![Project Euler Badge](http://i.imgur.com/8qsRbxN.png "Project Euler Badge")
 
 Running times on a mid-2012 MacBook Pro (2.7 GHz i7, 16 GB RAM, 10.11.5):
 
