@@ -2,9 +2,7 @@ import support.Prime;
 import support.Problem;
 
 import java.util.ArrayList;
-import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by Mark on 7/21/16.
