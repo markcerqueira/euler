@@ -6,51 +6,57 @@ Running times on a mid-2012 MacBook Pro (2.7 GHz i7, 16 GB RAM, 10.11.5):
 
 ```
 // Answers omitted to avoid spoiler alerts.
-Problem97: XX in 5565 ms
-Problem67: XX in 18 ms
-Problem46: XX in 1712 ms
-Problem42: XX in 17 ms
-Problem40: XX in 85 ms
-Problem37: XX in 1091 ms
-Problem36: XX in 172 ms
-Problem35: XX in 1224 ms
-Problem34: XX in 465 ms
-Problem33: XX in 35 ms
-Problem32: XX in 86 ms
-Problem30: XX in 304 ms
-Problem29: XX in 110 ms
-Problem27: XX in 209 ms
-Problem26: XX in 5 ms
-Problem25: XX in 203 ms
-Problem24: XX in 5 ms
-Problem23: XX in 200 ms
-Problem22: XX in 27 ms
-Problem21: XX in 54 ms
-Problem20: XX in 11 ms
-Problem19: XX in 6 ms
-Problem18: XX in 1 ms
-Problem17: XX in 5 ms
-Problem16: XX in 3 ms
-Problem15: XX in 11 ms
-Problem14: XX in 2626 ms
-Problem13: XX in 7 ms
-Problem12: XX in 733 ms
-Problem11: XX in 9 ms
-Problem10: XX in 1199 ms
-Problem9: XXX in 3 ms
-Problem8: XXX in 1 ms
-Problem7: XXX in 20 ms
-Problem6: XXX in 0 ms
-Problem5: XXX in 1 ms
-Problem4: XXX in 30 ms
-Problem3: XXX in 1190 ms
-Problem2: XXX in 1 ms
-Problem1: XXX in 0 ms
+Problem097: XXX in 7904 ms
+Problem067: XXX in 10 ms
+Problem048: XXX in 12 ms
+Problem046: XXX in 1425 ms
+Problem042: XXX in 4 ms
+Problem041: XXX in 294 ms
+Problem040: XXX in 25 ms
+Problem039: XXX in 7 ms
+Problem038: XXX in 26 ms
+Problem037: XXX in 651 ms
+Problem036: XXX in 49 ms
+Problem035: XXX in 654 ms
+Problem034: XXX in 289 ms
+Problem033: XXX in 5 ms
+Problem032: XXX in 50 ms
+Problem031: XXX in 18 ms
+Problem030: XXX in 268 ms
+Problem029: XXX in 45 ms
+Problem028: XXX in 0 ms
+Problem027: XXX in 245 ms
+Problem026: XXX in 1 ms
+Problem025: XXX in 110 ms
+Problem024: XXX in 0 ms
+Problem023: XXX in 176 ms
+Problem022: XXX in 16 ms
+Problem021: XXX in 26 ms
+Problem020: XXX in 1 ms
+Problem019: XXX in 4 ms
+Problem018: XXX in 0 ms
+Problem017: XXX in 0 ms
+Problem016: XXX in 1 ms
+Problem015: XXX in 0 ms
+Problem014: XXX in 2372 ms
+Problem013: XXX in 1 ms
+Problem012: XXX in 605 ms
+Problem011: XXX in 6 ms
+Problem010: XXX in 960 ms
+Problem009: XXX in 2 ms
+Problem008: XXX in 0 ms
+Problem007: XXX in 16 ms
+Problem006: XXX in 0 ms
+Problem005: XXX in 1 ms
+Problem004: XXX in 8 ms
+Problem003: XXX in 970 ms
+Problem002: XXX in 0 ms
+Problem001: XXX in 0 ms
 ```
 
 ### Adding a new solution
 * Create a new class that inherits from Problem and implement abstract methods.
-* Add the new class name (e.g. `Problem1.class`) to `problemClasses` in `Main.java`.
+* In `Main.java` make sure `MAX_PROBLEM_ID` covers your problem id.
 * The `public long solveProblem()` should return the answer to the problem. Solutions should follow Project Euler's ["one-minute rule"][3]: most solutions should run under one minute. 
 * Running `Main.java` class solves all problems in the `problemClasses` array.
 * Once the answer is correct [Base64 encode it][2] and return that value as a String in `public String base64EncodedAnswer()`. When the problem is solved on subsequent runs it'll verify that the answer it calculates is still correct.

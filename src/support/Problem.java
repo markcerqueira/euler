@@ -19,9 +19,9 @@ public abstract class Problem {
         }
     }
 
-    public void runAndLogOutput() {
+    public void runAndLogOutput(boolean hideAnswer) {
         Pair<Long, Long> answer = solve();
-        System.out.println(getClass().getSimpleName() + ": " + answer.getKey() + " in " + answer.getValue() + " ms");
+        System.out.println(getClass().getSimpleName() + ": " + (hideAnswer ? "XXX" : answer.getKey()) + " in " + answer.getValue() + " ms");
 
         // Validation: if we have a Base64 encoded answer, validate that the answer we calculated is correct.
         String base64EncodedAnswer = base64EncodedAnswer();
