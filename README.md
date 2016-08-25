@@ -10,6 +10,7 @@ Problem097: XXX in 7904 ms
 Problem067: XXX in 10 ms
 Problem048: XXX in 12 ms
 Problem046: XXX in 1425 ms
+Problem043: XXX in 3319 ms
 Problem042: XXX in 4 ms
 Problem041: XXX in 294 ms
 Problem040: XXX in 25 ms

@@ -14,12 +14,12 @@ public class Main {
             Constructor<?> ctor = clazz.getConstructor();
             Problem problem = (Problem) ctor.newInstance();
             problem.runAndLogOutput(false);
-        } catch (Exception e) {
-            System.out.println();
-        } finally {
+
             if (SINGLE_RUN_CLASS_NAME != null || SINGLE_RUN_CLASS_NAME.length() < 2) {
                 return;
             }
+        } catch (Exception e) {
+            System.out.println();
         }
 
         for (int i = MAX_PROBLEM_ID; i > 0; i--) {

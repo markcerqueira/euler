@@ -16,17 +16,8 @@ public class Problem041 extends Problem {
     public long solveProblem() {
         // Start with using all 9 digits and see if there are any primes. If not, we'll use 8 digits, etc.
         for (int i = 9; i > 0; i--) {
-            // For i = 9 -> "987654321", for i = 8 -> "87654321", etc.
-            String permuteString = "";
-            for (int j = i; j > 0; j--) {
-                permuteString += "" + j;
-            }
-
-            // Generate permutations and sort with highest numbers first so if we find a prime, we return the largest
-            // one.
-            List<String> candidates = new ArrayList<>();
-            Permutations.permutations(permuteString, candidates);
-            Collections.sort(candidates, (o1, o2) -> Integer.parseInt(o2) - Integer.parseInt(o1));
+            // Generate a sorted list of all pandigital numbers with 1 to i digits
+            List<String> candidates = Pandigital.getAllPandigitalPermutations(i, true /* sort */);
 
             for (String candidate : candidates) {
                 if (Prime.isPrime(candidate)) {
