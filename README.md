@@ -2,7 +2,7 @@
 
 ![Project Euler Badge](http://i.imgur.com/8qsRbxN.png "Project Euler Badge")
 
-Running times on a mid-2012 MacBook Pro (2.7 GHz i7, 16 GB RAM, 10.11.5):
+Running times on a mid-2012 MacBook Pro (2.7 GHz i7, 16 GB RAM, 10.12.2):
 
 ```
 // Answers omitted to avoid spoiler alerts.
@@ -11,6 +11,7 @@ Problem067: XXX in 10 ms
 Problem055: XXX in 242 ms
 Problem049: XXX in 64 ms
 Problem048: XXX in 12 ms
+Problem047: XXX in 7809 ms
 Problem046: XXX in 1425 ms
 Problem043: XXX in 3319 ms
 Problem042: XXX in 4 ms
