@@ -1,7 +1,7 @@
 package support;
 
-import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -25,6 +25,20 @@ public class Prime {
 
     public static boolean isPrime(String num) {
         return isPrime(Long.parseLong(num));
+    }
+
+    public static List<Long> getPrimesThrough(long upTo) {
+        return getPrimesBetween(2, upTo);
+    }
+
+    public static List<Long> getPrimesBetween(long from, long to) {
+        List<Long> primeList = new LinkedList<>();
+        for (long i = from; i < to; i++) {
+            if (isPrime(i)) {
+                primeList.add(i);
+            }
+        }
+        return primeList;
     }
 
     // http://www.vogella.com/tutorials/JavaAlgorithmsPrimeFactorization/article.html

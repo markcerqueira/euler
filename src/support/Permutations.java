@@ -1,12 +1,23 @@
 package support;
 
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Set;
 
 /**
  * Created by Mark on 7/24/16.
  */
 public class Permutations {
+
+    public static void numberPermutations(Long number, Collection<Long> results) {
+        Set<String> stringPermutations = new HashSet<>();
+        permutations("" + number, stringPermutations);
+
+        Set<Long> numberPermutations = new HashSet<>();
+        for (String permutation : stringPermutations) {
+            results.add(Long.parseLong(permutation));
+        }
+    }
 
     // http://introcs.cs.princeton.edu/java/23recursion/Permutations.java.html
     public static void permutations(String string, Collection<String> results) {
