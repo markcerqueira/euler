@@ -8,6 +8,7 @@ Running times on a mid-2012 MacBook Pro (2.7 GHz i7, 16 GB RAM, 10.11.5):
 // Answers omitted to avoid spoiler alerts.
 Problem097: XXX in 7904 ms
 Problem067: XXX in 10 ms
+Problem055: XXX in 242 ms
 Problem048: XXX in 12 ms
 Problem046: XXX in 1425 ms
 Problem043: XXX in 3319 ms
